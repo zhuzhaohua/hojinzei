@@ -1,6 +1,6 @@
-CREATE DATABASE `tus` DEFAULT CHARACTER SET utf8;
+CREATE DATABASE `hojinzei` DEFAULT CHARACTER SET utf8;
 
-USE `tus`;
+USE `hojinzei`;
 
 SET FOREIGN_KEY_CHECKS = 0;
 
@@ -76,3 +76,6 @@ CREATE TABLE `oauth_refresh_token`
   CHARACTER SET = utf8
   COLLATE = utf8_general_ci
   ROW_FORMAT = Dynamic;
+
+INSERT INTO `oauth_client_details` VALUES ('kbt', 'kbt', '{noop}123456', 'api', 'password, refresh_token', NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `kbt_user` VALUES (1, 'admin', '{noop}123456', 'admn', '2019-08-24 18:19:24');
