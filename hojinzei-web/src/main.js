@@ -15,8 +15,8 @@ import i18n from '@/lang' // Internationalization
 import '@/icons' // icon
 import '@/permission' // permission control
 
-import Avue from '@smallwei/avue';
-import '@smallwei/avue/lib/index.css';
+import FormMaking from 'form-making'
+import 'form-making/dist/FormMaking.css'
 
 /**
  * If you don't want to use mock-server
@@ -34,9 +34,9 @@ import '@smallwei/avue/lib/index.css';
 // set ElementUI lang to EN
 Vue.use(ElementUI, { i18n: (key, value) => i18n.t(key, value) })
 
-Vue.config.productionTip = false
+Vue.use(FormMaking)
 
-Vue.use(Avue);
+Vue.config.productionTip = false
 
 new Vue({
   el: '#app',

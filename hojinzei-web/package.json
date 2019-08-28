@@ -13,9 +13,9 @@
     "svgo": "svgo -f src/icons/svg --config=src/icons/svgo.yml"
   },
   "dependencies": {
-    "@smallwei/avue": "^2.0.6",
     "axios": "0.18.1",
     "element-ui": "2.9.2",
+    "form-making": "^1.2.1",
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",
     "nprogress": "0.2.0",
